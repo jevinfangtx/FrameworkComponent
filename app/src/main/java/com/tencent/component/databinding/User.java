@@ -3,6 +3,8 @@ package com.tencent.component.databinding;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 
+import com.android.databinding.library.baseAdapters.BR;
+
 public class User extends BaseObservable {
     private String firstName;
     private String lastName;
