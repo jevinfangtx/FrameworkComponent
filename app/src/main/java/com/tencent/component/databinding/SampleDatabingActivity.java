@@ -10,7 +10,9 @@ public class SampleDatabingActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_databinding_sample);
-        ObservableClassFragment fragment = new ObservableClassFragment();
+//        ObservableClassFragment fragment = new ObservableClassFragment();
+//        GenerateFragment fragment = new GenerateFragment();
+        CoordinatorFragment fragment = new CoordinatorFragment();
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.fragment_container, fragment).commit();
     }

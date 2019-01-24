@@ -2,4 +2,52 @@
     <string name="app_name">FrameworkComponent</string>
     <string name="name1">ttt</string>
     <string name="name2">ccc</string>
+    <string name="text_article">enterAlways 也需要和 scroll 配合使用。
+
+我们回到前面仔细观察单独 scroll 标志起作用的动图。
+
+可以发现，这个 scorll 标志起作用的时候，enter 行为发生时，是 NestedScrollView 内容先滑动，然后才是 Toolbar 开始滑动。
+
+而 enterAlways 这个标志与 scroll 配合使用可以改变这种行为，enterAlways 起作用时，当手指向下滑动时，Toolbar 会和 NestedScrollView 一起滑动，它们是同时滑动的。
+---------------------
+作者：frank909
+来源：CSDN
+原文：https://blog.csdn.net/briblue/article/details/77075198
+版权声明：本文为博主原创文章，转载请附上博文链接！
+    enterAlways 也需要和 scroll 配合使用。
+
+我们回到前面仔细观察单独 scroll 标志起作用的动图。
+
+可以发现，这个 scorll 标志起作用的时候，enter 行为发生时，是 NestedScrollView 内容先滑动，然后才是 Toolbar 开始滑动。
+
+而 enterAlways 这个标志与 scroll 配合使用可以改变这种行为，enterAlways 起作用时，当手指向下滑动时，Toolbar 会和 NestedScrollView 一起滑动，它们是同时滑动的。
+---------------------
+作者：frank909
+来源：CSDN
+原文：https://blog.csdn.net/briblue/article/details/77075198
+版权声明：本文为博主原创文章，转载请附上博文链接！
+    enterAlways 也需要和 scroll 配合使用。
+
+我们回到前面仔细观察单独 scroll 标志起作用的动图。
+
+可以发现，这个 scorll 标志起作用的时候，enter 行为发生时，是 NestedScrollView 内容先滑动，然后才是 Toolbar 开始滑动。
+
+而 enterAlways 这个标志与 scroll 配合使用可以改变这种行为，enterAlways 起作用时，当手指向下滑动时，Toolbar 会和 NestedScrollView 一起滑动，它们是同时滑动的。
+---------------------
+作者：frank909
+来源：CSDN
+原文：https://blog.csdn.net/briblue/article/details/77075198
+版权声明：本文为博主原创文章，转载请附上博文链接！
+    enterAlways 也需要和 scroll 配合使用。
+
+我们回到前面仔细观察单独 scroll 标志起作用的动图。
+
+可以发现，这个 scorll 标志起作用的时候，enter 行为发生时，是 NestedScrollView 内容先滑动，然后才是 Toolbar 开始滑动。
+
+而 enterAlways 这个标志与 scroll 配合使用可以改变这种行为，enterAlways 起作用时，当手指向下滑动时，Toolbar 会和 NestedScrollView 一起滑动，它们是同时滑动的。
+---------------------
+作者：frank909
+来源：CSDN
+原文：https://blog.csdn.net/briblue/article/details/77075198
+版权声明：本文为博主原创文章，转载请附上博文链接！</string>
 </resources>
