@@ -4,4 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.wegame.canvasui.CanvasAreaView
+        android:id="@+id/canvas_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </android.support.constraint.ConstraintLayout>

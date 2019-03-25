@@ -1,6 +1,6 @@
 package com.wegame.canvasui.widget;
 
-class Area {
+public class Area {
     protected int id;
     protected int areaWidth;
     protected int areaHeight;
