@@ -15,7 +15,6 @@ public class SampleDatabingFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         FragmentDatabindingSampleBinding binding = FragmentDatabindingSampleBinding.inflate(inflater, container, false);
-
         mUser.put("firstName", "Google");
         mUser.put("lastName", "Inc.");
         mUser.put("age", 17);
