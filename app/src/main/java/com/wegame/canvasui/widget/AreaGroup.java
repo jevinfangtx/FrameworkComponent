@@ -1,12 +1,36 @@
 package com.wegame.canvasui.widget;
 
-public class AreaGroup extends Area {
+import android.content.Context;
 
-    private Area[] mChildren;
-    private int mChildrenCount;
+import org.json.JSONObject;
+
+public abstract class AreaGroup extends Area {
 
     private static final int ARRAY_INITIAL_CAPACITY = 12;
     private static final int ARRAY_CAPACITY_INCREMENT = 12;
 
+    private Area[] mChildren = new Area[ARRAY_INITIAL_CAPACITY];
+    private int mChildrenCount = 0;
 
+    public AreaGroup(Context context, JSONObject attribute) {
+        super(context, attribute);
+    }
+
+    public void addArea(Area area) {
+        if (area == null) {
+            return;
+        }
+        increaseChildrenArray();
+        mChildren[mChildrenCount] = area;
+        mChildrenCount++;
+    }
+
+    private void increaseChildrenArray() {
+        Area[] children = mChildren;
+        final int size = mChildren.length;
+        if (size == mChildrenCount) {
+            mChildren = new Area[size + ARRAY_CAPACITY_INCREMENT];
+            System.arraycopy(children, 0, mChildren, 0, size);
+        }
+    }
 }
