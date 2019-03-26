@@ -1,7 +1,5 @@
 package com.tencent.component.textspan;
 
-import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
