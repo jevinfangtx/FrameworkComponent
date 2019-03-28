@@ -2,6 +2,7 @@
     <string name="app_name">FrameworkComponent</string>
     <string name="name1">ttt</string>
     <string name="name2">ccc</string>
+    <string name="text_main">c\\rcc</string>
     <string name="text_article">enterAlways 也需要和 scroll 配合使用。
 
 我们回到前面仔细观察单独 scroll 标志起作用的动图。

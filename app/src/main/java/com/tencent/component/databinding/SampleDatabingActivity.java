@@ -8,6 +8,7 @@ import com.tencent.component.R;
 import com.tencent.component.architecture.UserProfileFragment;
 import com.tencent.component.retrofit2.RetrofitFragment;
 import com.tencent.component.textspan.SpanFragment;
+import com.wegame.canvasui.CanvasuiFragment;
 //import com.tencent.component.kotlindev.UserFragment;
 
 public class SampleDatabingActivity extends AppCompatActivity {
@@ -28,7 +29,7 @@ public class SampleDatabingActivity extends AppCompatActivity {
 
 //        Fragment fragment = new RetrofitFragment();
 
-        Fragment fragment = new SpanFragment();
+        Fragment fragment = new CanvasuiFragment();
 
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.fragment_container, fragment).commit();

@@ -4,4 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--<com.wegame.canvasui.CanvasAreaView-->
+        <!--android:id="@+id/canvas_area"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/holo_orange_light"/>-->
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/holo_green_light"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:text="就是的哦的的的发斯蒂芬斯蒂芬发的所发共同奋斗过生的发大师大师的发热体"-->
+            <!--android:singleLine="true"-->
+            <!--android:textSize="16dp"/>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="就是的哦的的的的发的水电费水电费防守打法防守打法热体"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
