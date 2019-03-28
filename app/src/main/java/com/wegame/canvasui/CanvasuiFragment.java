@@ -81,18 +81,18 @@ public class CanvasuiFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_canvasui, container, false);
-        JSONObject jsonObject = null;
-        try {
-            jsonObject = new JSONObject(uiJson);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        mCanvasArea = view.findViewById(R.id.canvas_area);
-        mCanvasArea.inflateFromJson(uiJson);
-        ViewGroup.LayoutParams params = mCanvasArea.getLayoutParams();
-        params.width = 200;
-        params.height = 200;
-        mCanvasArea.setLayoutParams(params);
+//        JSONObject jsonObject = null;
+//        try {
+//            jsonObject = new JSONObject(uiJson);
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//        mCanvasArea = view.findViewById(R.id.canvas_area);
+//        mCanvasArea.inflateFromJson(uiJson);
+//        ViewGroup.LayoutParams params = mCanvasArea.getLayoutParams();
+//        params.width = 200;
+//        params.height = 200;
+//        mCanvasArea.setLayoutParams(params);
 //        mCanvasArea.onMeasure();
         return view;
 
