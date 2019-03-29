@@ -51,7 +51,7 @@ public class CanvasAreaView extends View {
         ViewGroup.LayoutParams lp = this.getLayoutParams();
         final int canvasWidthMeasureSpec = getCanvasMeasureSpec(screenWidth, lp.width);
         final int canvasHeightMeasureSpec = getCanvasMeasureSpec(screenHeight, lp.height);
-
+        mArea.measure(canvasWidthMeasureSpec, canvasHeightMeasureSpec);
     }
 
     @Override
