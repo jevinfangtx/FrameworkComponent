@@ -6,8 +6,7 @@ import android.net.NetworkInfo;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
-
-import com.wegame.canvasui.CanvasParam;
+import android.view.ViewGroup;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -52,9 +51,9 @@ public class Utils {
      */
     public static int getCanvasAreaSize(Context context, String sizeStr) {
         if (TextUtils.equals(sizeStr, "match_parent")) {
-            return CanvasParam.match_parent;
+            return ViewGroup.LayoutParams.MATCH_PARENT;
         } else if (TextUtils.equals(sizeStr, "wrap_content")) {
-            return CanvasParam.wrap_content;
+            return ViewGroup.LayoutParams.WRAP_CONTENT;
         } else {
             return getDimensionPixelSize(context, sizeStr);
         }

@@ -4,6 +4,9 @@ import android.content.Context;
 
 import org.json.JSONObject;
 
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+
 public abstract class AreaGroup extends Area {
 
     private static final int ARRAY_INITIAL_CAPACITY = 12;
@@ -32,5 +35,17 @@ public abstract class AreaGroup extends Area {
             mChildren = new Area[size + ARRAY_CAPACITY_INCREMENT];
             System.arraycopy(children, 0, mChildren, 0, size);
         }
+    }
+
+    public int getChildCount() {
+        return mChildrenCount;
+    }
+
+    @Nullable
+    public Area getChildAt(int index) {
+        if (index < 0 || index >= mChildrenCount) {
+            return null;
+        }
+        return mChildren[index];
     }
 }

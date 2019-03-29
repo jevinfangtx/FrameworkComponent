@@ -2,6 +2,9 @@ package com.wegame.canvasui.widget;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.text.TextUtils;
+import android.view.View;
+
 import com.wegame.canvasui.utils.Utils;
 import org.json.JSONObject;
 import java.util.Iterator;
@@ -22,6 +25,10 @@ public class Area {
     protected int paddingRight;
     protected int paddingBottom;
     protected int bgColor;
+    protected int visible;
+
+    int mMeasureWidth;
+    int mMeasureHeight;
 
     public Area(Context context, JSONObject attribute) {
         mContext = context;
@@ -104,8 +111,48 @@ public class Area {
     }
 
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        setMeasureDimension(getDefaultSize(0, widthMeasureSpec), getDefaultSize(0, heightMeasureSpec));
+    }
+
+    protected final void setMeasureDimension(int measureWidth, int measureHeight) {
+        mMeasureWidth = measureWidth;
+        mMeasureHeight = measureHeight;
+    }
+
+    protected final void setMeasureDimensionRaw(int measureWidth, int measureHeight) {
 
     }
+
+    public final int getMeasureWidth() {
+        return mMeasureWidth;
+    }
+
+    public final int getMeasureHeight() {
+        return mMeasureHeight;
+    }
+
+    /**
+     * 获取默认的尺寸
+     * @param size
+     * @param measureSpec
+     * @return
+     */
+    public static int getDefaultSize(int size, int measureSpec) {
+        int result = size;
+        int specMode = View.MeasureSpec.getMode(measureSpec);
+        int specSize = View.MeasureSpec.getSize(measureSpec);
+        switch (specMode) {
+            case View.MeasureSpec.UNSPECIFIED:
+                result = size;
+                break;
+            case View.MeasureSpec.AT_MOST:
+            case View.MeasureSpec.EXACTLY:
+                result = specSize;
+                break;
+        }
+        return result;
+    }
+
 
 
 }
